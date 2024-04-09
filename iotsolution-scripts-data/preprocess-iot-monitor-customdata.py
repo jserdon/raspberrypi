@@ -170,7 +170,6 @@ latlong=lat:long'
      identifier = "IoT device performance and failures"
 
      # if dataage - use:dataage_utcoffset_timetype
-     # preprocesslogic='MIN,MAX,COUNT,VARIANCE,OUTLIERS,ANOMPROB'
      preprocesslogic='MIN,MAX,COUNT,VARIANCE,OUTLIERS,ANOMPROB'
 
      pathtotmlattrs='oem=n/a,lat=n/a,long=n/a,location=n/a,identifier=n/a'          
@@ -192,7 +191,6 @@ maintopic='iot-mainstream'
 preprocesstopic='iot-preprocess'
 maintopic,producerid=datasetup(maintopic,preprocesstopic)
 print("Started Preprocessing: ", maintopic,producerid)
-preprocesslogic='MIN,MAX,COUNT,VARIANCE,OUTLIERS,ANOMPROB'
 async def startviper():
 
         print("Start Preprocess-iot-monitor-customdata Request:",datetime.datetime.now())
