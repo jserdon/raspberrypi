@@ -170,7 +170,7 @@ latlong=lat:long'
      identifier = "IoT device performance and failures"
 
      # if dataage - use:dataage_utcoffset_timetype
-     preprocesslogic='count,variance,outliers,anomprob,min,max'
+     preprocesslogic='min,max,count,variance,outliers,anomprob'
 
      pathtotmlattrs='oem=n/a,lat=n/a,long=n/a,location=n/a,identifier=n/a'          
      try:
