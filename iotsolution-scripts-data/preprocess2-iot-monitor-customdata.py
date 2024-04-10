@@ -139,7 +139,7 @@ def sendtransactiondata(maintopic,mainproducerid,VIPERPORT,index,preprocesstopic
       # here we will take max values of the arcturus-humidity, we will Diff arcturus-temperature, and average arcturus-Light_Intensity
       # NOTE: The number of process logic functions MUST match the streams - the operations will be applied in the same order
      #preprocesslogic='avg,avg'
-     preprocesslogic='count,variance,outliers,anomprob,min,max'
+     preprocesslogic='min,max,count,variance,outliers,anomprob'
      #preprocesslogic='diff'
      preprocessconditions=''
     
